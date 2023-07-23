@@ -1,7 +1,7 @@
 
 /* ===NAVBAR-HEADER=== */
 .header{
-    height: 120px;
+    height: var(--header-height);
     background: linear-gradient(
         180deg,
         #f53e2d,
@@ -12,10 +12,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: var(--navbar-height);
 }
 .header__navlist{
     display: flex;
     padding-left: 0;
+    margin: 4px 0 0 0;
 }
 .header__navbar-item,
 .header__navbar-item-link{
@@ -115,8 +117,42 @@
     background-color: var(--white-color);
     border: 1px solid #D3D3D3;
     border-radius: 3px;
+    transform-origin: 95% 5%;
+    animation: showNotify linear 0.25s;
+    will-change: opacity, transform;
+    display: none;
+}
+.header__navbar-item-show:hover .header__notify{
+    display: block;
+}
+.header__notify::before{
+    content: "";
+    border-style: solid;
+    border-width: 20px 30px;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 8px;
+    top: -25px;
+}
+.header__notify::after{
+    content: "";
+    width: 25%;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    right: 2px;
 }
 
+@keyframes showNotify{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+
+    }100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .header__notify-header{
     height: 40px;
     background-color: var(--white-color);
@@ -128,6 +164,7 @@
     font-style: italic;
     font-size: 1.5rem;
     line-height: 40px;
+    cursor: default;
 }
 
 .header__notify-list{
@@ -169,6 +206,7 @@
     color: var(--black-color);
     font-size: 1.4rem;
     font-weight: 600;
+    line-height: 1.8rem;
     margin-bottom: 0.1rem;
 }
 
@@ -180,4 +218,153 @@
     text-align: center;
     display: block;
     padding: 16px 16px;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
+
+
+/* Form dang ki */
+.auth-form{
+    width: 500px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+.auth-form__container{
+    padding: 0 32px;
+}
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 8px;
+}
+.auth-form__switch-btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+.auth-form__form{
+    margin-top: 16px;
+}
+.auth-form__input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    outline: none;
+}
+.auth-form__input:focus{
+    border-color: #777;
+}
+.auth-form__aside{
+    margin-top: 16px;
+}
+.auth-form__policy-text{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 12px;
+}
+.auth-form__text-link{
+    color: var(--primary-color);
+}
+
+.auth-form__control{
+    margin-top: 90px;
+    display: flex;
+    justify-content: end;
+}
+.auth-form__control-back{
+    margin-right: 8px;
+    background-color: var(--white-color);
+
+}
+
+.auth-form__socials{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 32px;
+    background-color: #F5F5F5;
+    margin-top: 24px;
+}
+.auth-form__socials-icon{
+    font-size: 1.8rem;
+    padding: 5px 16px;
+}
+
+.auth-form__socials-fb{
+    background-color: #3A5A98;
+    color: var(--white-color);
+
+}
+
+.auth-form__socials-gg{
+    background-color: var(--white-color);
+}
+.social-text{
+    margin: 0 12px;
+}
+
+/* Dang nhap */
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+.auth__form-sereparate{
+    border-left: 1px solid #aea9a9;
+    height: 22px;
+    margin: -4px 16px 0;
+}
+.auth-form__help-link{
+    font-size: 1.4rem;
+    color: #666;
+}
+.auth-form__help-link.auth-form__help-forgot{
+    color: var(--primary-color);
+}
+
+/* search */
+.header__search{
+   height: var(--search-height); 
+   display: flex;
+   align-items: center;
+}
+.header__logo{
+    width: 200px;
+    margin-right: 50px;
+}
+
+.logo-img{
+    width: 150px;
+}
+
+.header__search-inp{
+    height: 40px;
+    flex: 1;
+    background-color: var(--white-color);
+    border-radius: 3px;
+}
+
+.header__cart{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__cart-icon{
+    font-size: 2.4rem;
+    color: var(--white-color);
+    margin-top: 6px;
+}
+
+
