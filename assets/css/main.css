@@ -54,10 +54,11 @@
     transform: translateY(-50%);
     height: 16px;
 }
-.header__navbar-user{
-    display: flex;
+.header_navbar-user{
+    display: none;
     justify-items:center ;
 }
+
 .user-img{
     width: 20px;
     height: 20px;
@@ -93,6 +94,7 @@
     top: -22%;
     right: 16%;
 }
+
 .header_navbar-user:hover .user__info-list{
     display: block;
 }

@@ -60,13 +60,23 @@ a{
     }
 }
 /* Modal */
+.active_flex{
+    display: flex !important;
+}
+.active_block{
+    display: block !important;
+}
+.active_none{
+    display: none !important;
+}
+
 .modal{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+    display: none;
     animation: fadeIn ease-in 0.2s;
 }
 .modal__overlay{
