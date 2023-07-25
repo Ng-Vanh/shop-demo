@@ -34,6 +34,19 @@ html{
 .gid_row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+/* demo */
+.gird__col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+.gird__col-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.332%;
 }
 
 li{
@@ -103,7 +116,7 @@ a{
     font-weight: 600;
     outline: navajowhite;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
@@ -130,4 +143,19 @@ a{
 .btn--size-s{
     height: 32px;
     font-size: 1.2rem;
+}
+
+/* select */
+.select-inp{
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+
 }
