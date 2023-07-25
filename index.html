@@ -98,13 +98,30 @@
                                 <i class="header__navbar-icon fa-solid fa-circle-info"></i>
                                 Trợ giúp</a>
                         </li>
+                        <!--      
                         <li class="header__navbar-item header__navbar-item-strong header__navbar-item-separate">Đăng kí</li>
                         <li class="header__navbar-item header__navbar-item-strong">Đăng nhập</li>
+                        -->
+
+                        <li class="header__navbar-item header_navbar-user">
+                            <img src="assets/img/me.jpg" class="user-img" alt="">
+                            <span class="name_user">
+                                Ng-Vanh
+                            </span>
+                            <ul class="user__info-list">
+                                <li class="user__info-list-item">Tài khoản của tôi</li>
+                                <li class="user__info-list-item">Địa chỉ của tôi</li>
+                                <li class="user__info-list-item">Đơn mua</li>
+                                <li class="user__info-list-item">Đăng xuất</li>
+
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- search -->
                 <div class="header__search">
                     <div class="header__logo">
+                       <a href="/">
                         <svg viewBox="0 0 192 65" class="logo_img">
                             <g fill-rule="evenodd">
                                 <path fill="#fff"
@@ -112,6 +129,7 @@
                                 ></path>
                             </g>
                         </svg>
+                       </a>
                     </div>    
                     <div class="header__search-inp">
                         <div class="header__search-input-wrap">
@@ -154,9 +172,73 @@
 
                     </div>
 
-
+                        <!-- Cart -->
                     <div class="header__cart">
                         <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <p class="header__cart-notice">3</p>
+
+                            <!-- Bo cart:  header__cart-list-none  -->
+                        <div class="header__cart-list">
+                            <img src="assets/img/no-cart.png" alt="" class="nocart-img">
+                            <span class="header__cart-message">Chưa có sản phẩm</span>
+                            <!-- Có sản phẩm  -->
+                            <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                            <ul class="header__cart-list-item">
+                                <li class="cart__item">
+                                    <img src="assets/img/150.png" class="cart__item-img">
+                                    <div class="cart__item-info">
+                                        <div class="cart__item-head">
+                                            <h5 class="cart__item-name">Kem trộn</h5>
+                                            <div class="wrap__info">
+                                                <span class="cart__item-price">2.000.000đ</span>
+                                                <span class="cart__item-multify">x</span>
+                                                <span class="cart__item-quantity">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="cart__item-body">
+                                            <span class="cart__item-desc">Phân loại: bạc</span>
+                                            <span class="cart__item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__item">
+                                    <img src="assets/img/150.png" class="cart__item-img">
+                                    <div class="cart__item-info">
+                                        <div class="cart__item-head">
+                                            <h5 class="cart__item-name">Kem trộn</h5>
+                                            <div class="wrap__info">
+                                                <span class="cart__item-price">2.000.000đ</span>
+                                                <span class="cart__item-multify">x</span>
+                                                <span class="cart__item-quantity">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="cart__item-body">
+                                            <span class="cart__item-desc">Phân loại: bạc</span>
+                                            <span class="cart__item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__item">
+                                    <img src="assets/img/150.png" class="cart__item-img">
+                                    <div class="cart__item-info">
+                                        <div class="cart__item-head">
+                                            <h5 class="cart__item-name">Kem trộn</h5>
+                                            <div class="wrap__info">
+                                                <span class="cart__item-price">2.000.000đ</span>
+                                                <span class="cart__item-multify">x</span>
+                                                <span class="cart__item-quantity">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="cart__item-body">
+                                            <span class="cart__item-desc">Phân loại: bạc</span>
+                                            <span class="cart__item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn btn__primary header__cart-view-cart">Xem giỏ hàng</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
