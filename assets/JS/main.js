@@ -88,3 +88,17 @@ logOutElement.addEventListener('click', function(){
 
     userElement.classList.replace('active_flex', 'active_none')
 })
+
+//select type sort
+
+var selectSortElements = document.querySelectorAll('.filter-btn')
+
+selectSortElements[0].addEventListener('click', function(){
+    selectSortElements[0].classList.toggle('btn__primary')
+})
+selectSortElements[1].addEventListener('click', function(){
+    selectSortElements[1].classList.toggle('btn__primary')
+})
+selectSortElements[2].addEventListener('click', function(){
+    selectSortElements[2].classList.toggle('btn__primary')
+})
