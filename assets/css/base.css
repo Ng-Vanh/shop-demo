@@ -164,3 +164,35 @@ a{
     cursor: pointer;
 
 }
+
+/* Pagination */
+.pagination{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item{
+    margin: 0 16px;
+}
+.pagination-item-icon{
+
+}
+.pagination-item-active .pagination-item-link{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+.pagination-item-active .pagination-item-link:hover{
+    opacity: 0.95;
+}
+
+.pagination-item-link{
+    --height:30px;
+    display: block;
+    color: #939393;
+    height: var(--height);
+    min-width: 40px;
+    text-align: center;
+    line-height: var(--height);
+}

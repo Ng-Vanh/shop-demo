@@ -121,6 +121,8 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn linear 0.3s ;
+    z-index: 1;
+    box-shadow: 0 -1px 2px #666;
 }
 .header_qr::before{
     content: "";
@@ -441,6 +443,7 @@
     border-radius: 3px;
     box-shadow: 0 1px 5px #888;
     display: none;
+    z-index: 1;
 }
 .header__search-input:focus ~ .header__search-history{
     display: block;
@@ -455,7 +458,6 @@
 .history-list{
     padding-left: 0;
     margin-bottom: 0;
-
 }
 .history-item{
     height: 38px;
@@ -479,6 +481,7 @@
     border-left: 1px solid #ccc;
     padding-left: 16px;
     position: relative;
+    z-index: 1;
 }
 
 .select-label{
@@ -596,6 +599,7 @@
     cursor: default;
     display: none;
     animation: fadeIn linear 0.3s;
+    z-index: 1;
 }
 .header__cart-list::after{
     cursor: pointer;
@@ -649,6 +653,8 @@
 }
 .header__cart-list-item{
     padding-left: 0;
+    max-height:40vh ;
+    overflow-y: auto;
 }
 .cart__item{
     display: flex;
@@ -677,9 +683,18 @@
     margin-top: 14px;
 }
 .cart__item-name{
+    flex: 1;
     font-size: 1.4rem;
     font-weight: 600;
     margin: 0;
+    line-height: 1.8rem;
+    max-height: 3.6rem;
+    overflow: hidden;
+    padding-right: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
 }
 .wrap__info{
 }
@@ -761,16 +776,6 @@
 
 .catelory-item-active .catelory-item-link{
     color: var(--primary-color);
-}
-.catelory-item-active .catelory-item-link::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(calc(-50% - 1px));
-    left: 6px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: transparent transparent transparent var(--primary-color);
 }
 
 .catelory-item-link{
@@ -1060,4 +1065,65 @@ i.like-icon-fill{
     margin-top: 2px;
     color: var(--white-color);
 }
+.home-product__paganation{
+    margin: 48px 0 32px;
+}
 
+/* Footer */
+.footer{
+    border-top: 4px solid var(--primary-color);
+    padding-top: 20px;
+}
+.footer__heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.footer__list{
+    padding-left: 0;
+}
+.footer__list-item{
+
+}
+.list-item__link{
+    display: block;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    padding: 6px 0;
+}
+.list-item__link:hover{
+    color: var(--primary-color);
+}
+.footer-icon{
+    font-size: 2rem;
+    margin-right: 4px;
+}
+
+.footer__download{
+    display: flex;
+}
+.download-qr{
+    width: 80px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    margin-right: 12px;
+}
+.footer__download-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.download-app-icon{
+    height: 20px;
+    margin-bottom: 4px;
+}
+.text__copy-right{
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 24px;
+    background-color: #f5f5f5;
+    text-align: center;
+
+}
