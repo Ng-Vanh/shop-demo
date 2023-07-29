@@ -653,7 +653,7 @@
 }
 .header__cart-list-item{
     padding-left: 0;
-    max-height:40vh ;
+    max-height:25vh ;
     overflow-y: auto;
 }
 .cart__item{

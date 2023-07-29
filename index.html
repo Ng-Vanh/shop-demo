@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/font/fontawesome-6.4.0/css/all.min.css">
     <link rel="icon" href="assets/img/me.jpg" type="image/x-icon" />
 
@@ -14,9 +16,9 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <!-- navbar -->
-                <nav class="header__navbar">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navlist">
                         <li class="header__navbar-item header__navbar-item-showQR header__navbar-item-separate ">
                             Vào cửa hàng trên ứng dụng
@@ -124,7 +126,7 @@
                 </nav>
                 <!-- search -->
                 <div class="header__search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-tablet">
                        <a href="/">
                         <svg viewBox="0 0 192 65" class="logo_img">
                             <g fill-rule="evenodd">
@@ -248,7 +250,7 @@
             </div>
         </header>
         <div class="app_container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid_row app-content">
                     <div class="grid__col-2">
                         <nav class="category">
@@ -270,7 +272,7 @@
                         </nav>
                     </div>
                     <div class="grid__col-10">
-                        <div class="home_filter">
+                        <div class="home_filter hide-on-mobile-tablet">
                             <span class="filter-label">Sắp xếp theo</span>
                             <button class="filter-btn btn">Phổ biến</button>
                             <button class="filter-btn btn">Mới nhất</button>
@@ -816,7 +818,7 @@
             </div>
         </div>    
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid_row">
                     <div class="grid__col-2-4">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
