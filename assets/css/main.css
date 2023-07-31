@@ -447,7 +447,7 @@
    padding: 0 8px;
 }
 .header__mbsearch{
-
+    display: none;
 }
 .header__mbsearch-icon{
     font-size: 2.6rem;
